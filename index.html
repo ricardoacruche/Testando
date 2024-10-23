@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo do Ricardo</title>
+    <style>
+        body{
+            font-size: 100%;
+            background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+        }
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 24px;
+            z-index: 100;
+        }
+        .cabecalho-menu{
+            display: flex;
+            gap: 32px;
+        }
+        .cabecalho-menu-item{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: beige;
+            font-size: 20px;
+        }
+        .cabecalho-menu-item:hover{
+            color: bisque;
+        }
+        .conteudo{
+            border-top: 0.3px solid bisque;
+            width: 100%;
+        }
+        .conteudo .conteudo-principal-imagem{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .cabecalho-imagem{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            animation: moveAndMorph 5s infinite alternate;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+        }
+
+        .cabecalho-imagem:hover {
+          transform: scale(1.2);
+        }
+
+        @keyframes moveAndMorph {
+        0% {
+            left: 0px;
+            border-radius: 50%;
+        }
+        50% {
+            left: 150px;
+            border-radius: 20%;
+        }
+        100% {
+            left: 300px;
+            border-radius: 50%;
+        }
+        }
+        .conteudo-principal{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 95%;
+            justify-content: space-around;
+        }
+        .conteudo-principal-escrito{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .conteudo-principal-escrito-titulo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 64px;
+            color: blanchedalmond;
+        }
+        .conteudo-principal-escrito-subtitulo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: bisque;
+        }
+        .conteudo-principal-escrito-botao{
+            background-color: antiquewhite;;
+            width: 20%;
+            border: none;
+            box-shadow: 4px 5px 4px 0px #00000040;
+            border-radius: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: #2F2325;
+        }
+        .conteudo-principal-escrito-botao:hover{
+            letter-spacing: 2px;
+            transition: 0.3s all;
+        }
+        .conteudo-principal-imagem {
+            width: 100%;
+        }
+        .conteudo-secundario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            margin-top: 60px;
+        }
+        .conteudo-secundario-titulo:hover{
+            font-size: 1.3rem;
+            transform: scale(1.02);
+            color: #8E5D52;
+        }
+        .conteudo-secundario-paragrafo:hover{
+            font-size: 1.3rem;
+            transform: scale(1.02);
+            color: #8E5D52;
+        }
+        .conteudo-secundario-titulo{
+            padding-top: 48px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color: bisque;
+        }
+        .conteudo-secundario-paragrafo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: blanchedalmond;
+        }
+        .botaoContato{
+            display: inline-block;
+            padding: 0.6rem 2.2rem;
+            background-color: antiquewhite;
+            border-radius: 2rem;
+            color: #2F2325;
+            transition: 0.3s ease;
+            margin-bottom: auto;
+        }
+        .botaoContato:hover{
+            box-shadow: 0 0 0.3rem #2F2325;
+            background-color: #8E5D52
+        }
+        .contato h3{
+            font-size: 1.2rem;
+            width: 120px;
+            height: 50px;
+            background: #2F2325;
+            position: relative;
+            box-shadow: 4px 5px 4px 0px #00000040;
+            border-radius: 20px;
+            animation-name: example;
+            animation-duration: 5s;  
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes example {
+        from {left: 0px;}
+        to {left: 650px; background-color: bisque;}
+        }
+        form {
+            max-width: 45rem;
+            margin: 0.6rem auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        form .input-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        form .input-box input,
+        form textarea{
+            width: 100%;
+            padding:  1rem;
+            font-size: 1rem;
+            color: #2F2325;
+            background-color: antiquewhite;
+            border-radius: 0.5rem;
+            margin: 0.4rem 0;
+        }
+        form textarea{
+            resize: none;
+        }
+
+        .rodape{
+            padding: 24px;
+            border-top: 0.3px solid bisque;
+        }
+        .rodape-titulo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            color: bisque;
+        }
+        .rodape-titulo-imagem{
+            padding: 5px;
+            border: 2px solid bisque;
+        }
+        .rodape-titulo-simbolo{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="logo.png" width="95" height="95">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="cv.html">Home</a>
+            <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/adriana-saty-bertelli/">Experiencias Profissionais</a>
+            <a class="cabecalho-menu-item" href="link-contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Sobre mim</h1>
+                <h3 class="conteudo-principal-escrito-subtitulo">Meu nome e Ricardo Caveira, tenho 25 anos e trabalho desde 2012 no mercado criativo como editor e Montion designer. Atualmente estou estudando HTML5 e CCS com especializacao em Python e cursando Analise e Desenvolvimento de Sistemas na Universidade Mackenzie</h3>
+                <button class="conteudo-principal-escrito-botao">Baixar Curriculo</button>
+            </div>
+             <div>
+                 <img class="conteudo-principal-imagem" src="caveira1.png" alt="Imagem de um caveira sentando em frente ao computador">
+            </div>
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Estudos</h3>
+            <p class="conteudo-secundario-paragrafo"><strong> Analise e Desenvolvimento de Sistemas EAD</strong> - universidade Prebisteriana Mackenzie (Previsao de terminio: 12/2024)</p>
+            <p class="conteudo-secundario-paragrafo"><strong>Efeitos Visuais</strong> - Epic School com certificado</p>
+            <p class="conteudo-secundario-paragrafo"><strong>Digital Video using Adobe Premiere Pro</strong> - Adobe Certifield Professional com certificado</p>
+        </section>
+
+        <section class="contato">
+            <h3>Formulário</h3>
+
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Numero de telefone">
+                    <input type="text" placeholder="Assunto">
+                </div>
+
+                    <textarea cols="30" rows="8" placeholder="Escreva sua mensagem"></textarea>
+
+                    <a href="#" class="botaoContato"><b>Enviar e-mail</b></a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-titulo"><b>Minhas redes sociais:</b></p>
+        <a href="https://github.com/ricardoacruche" target="_blank" rel="noopener noreferrer">
+            <img class="rodape-titulo-imagem" src="github-logo-24.png" alt="imagem de Github"></img>
+        </a>
+        <a href="https://www.linkedin.com/in/adriana-saty-bertelli/" target="_blank" rel="noopener noreferrer">
+            <img class="rodape-titulo-imagem" src="linkedin-square-logo-24.png" alt="imagem de Linkedin" ></img>
+        </a>
+        <a href="https://www.linkedin.com/in/adriana-saty-bertelli/" target="_blank" rel="noopener noreferrer">
+            <img class="rodape-titulo-imagem" src="youtube-logo-24.png" alt="imagem de Youtube"></img>
+        </a>
+        <div class="rodape-titulo-simbolo">
+         <span>&#169;Site desenvolvido por Roberto Caveira</span>
+        </div>
+    </footer>
+
+</body>
+</html>
